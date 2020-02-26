@@ -1,0 +1,12 @@
+body {
+	font-family: Hack, monospace;
+}
+
+.holder {
+	overflow: auto;
+}
+
+.fighter {
+	float: left;
+	margin: 5px;
+}
