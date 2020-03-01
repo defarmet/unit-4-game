@@ -31,15 +31,15 @@ var fighter = {
 		this.div.append("<br>");
 		this.div.append(this.image);
 		this.div.append("<br>");
-		this.div.append(this.hp);
+		this.div.append("Health: " + this.hp);
 	}
 }
 
 var fighters = [];
 
 fighters.push(fighter.create("Luke Skywalker", "assets/images/Luke.jpg", 135, 12, 18));
-fighters.push(fighter.create("Sheev Palpatine", "assets/images/Sheev.jpg", 180, 10, 25));
-fighters.push(fighter.create("Darth Vader", "assets/images/Vader.jpg", 150, 11, 20));
+fighters.push(fighter.create("Sheev Palpatine", "assets/images/Sheev.jpg", 160, 10, 25));
+fighters.push(fighter.create("Darth Vader", "assets/images/Vader.jpg", 130, 11, 20));
 fighters.push(fighter.create("RX-24", "assets/images/RX-24.jpg", 70, 35, 3000));
 
 for (var i = 0; i < fighters.length; i++) {
@@ -67,7 +67,7 @@ function attack() {
 			$("#defender").empty();
 			$("#enemies-text").text("CHOOSE YOUR DEFENDER");
 			if (!fighters.length) {
-				$("#fighters-text").text("YOU HAVE WON. REFRESH TO PLAY AGAIN.");
+				$("#fighters-text").text("THE FORCE IS STRONG WITH YOU. REFRESH TO PLAY AGAIN.");
 				$("#enemies-text").empty();
 			}
 		}
